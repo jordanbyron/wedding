@@ -60,21 +60,48 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-h1#hero {
+body {
+  background: url(../img/arches.png) repeat;
   font-family: Cochin, Baskerville, serif;
+}
+
+#hero {
+  background: url(../img/bg.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+  box-shadow: #222 0 0 20px;
+  z-index: 2;
+}
+
+html.lt-ie8 #hero, html.li-ie7 #hero {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg.jpg', sizingMethod='scale')";
+}
+
+#hero h1 {
   font-weight: normal;
   color: #333;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   margin: 0;
   display: block;
   text-align: center;
   width: 100%;
   font-size: 4em;
-  text-shadow: 1px 1px #ddd;
+  text-shadow: 2px 2px rgba(255,255,255, 0.35);
+  transition: opacity 2s ease 0.5s;
+  -moz-transition: opacity 2s ease 0.5s;
+  -webkit-transition: opacity 2s ease 0.5s;
+  -o-transition: opacity 2s ease 0.5s;
+  opacity: 0;
 }
 
-h1#hero span {
+#hero h1 span {
   color: #4B2E5E;
   font-size: 2.5em;
   font-family: Big Caslon, Cochin, Baskerville, serif;
@@ -83,18 +110,60 @@ h1#hero span {
   vertical-align: middle;
 }
 
-html {
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#details {
+  background: url(../img/arches.png) repeat;
+  position: relative;
+  padding: 1em;
 }
 
-html.lt-ie8, html.li-ie7 {
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg.jpg', sizingMethod='scale')";
+#details div.container {
+  width: 700px;
+  margin: 0 auto;
 }
+
+#details h2 {
+  font-weight: normal;
+  font-family: CACChampagneRegular, Cochin, Baskerville, serif;
+  font-size: 5em;
+  text-align: center;
+  margin: 0.75em 0;
+}
+
+#ring {
+  padding: 5px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: #333 0 0 3px inset;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+#coming-soon {
+  font-size: 2em;
+  text-align: center;
+}
+
+p.script {
+  font-family: CACChampagneRegular, Cochin, Baskerville, serif;
+  font-size: 2em;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'CACChampagneRegular';
+    src: url('../fonts/cac_champagne-webfont.eot');
+    src: url('../fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cac_champagne-webfont.woff') format('woff'),
+         url('../fonts/cac_champagne-webfont.ttf') format('truetype'),
+         url('../fonts/cac_champagne-webfont.svg#CACChampagneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /* ==========================================================================
    Media Queries
