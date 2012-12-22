@@ -1,0 +1,384 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  background: url(../img/arches.png) repeat;
+  font-family: Cochin, Baskerville, serif;
+}
+
+#arch {
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+  box-shadow: #222 0 0 20px;
+  z-index: 2;
+}
+
+html.lt-ie8 #arch, html.li-ie7 #arch {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg.jpg', sizingMethod='scale')";
+}
+
+#arch h1 {
+  font-weight: normal;
+  color: #333;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 4em;
+  text-shadow: 2px 2px rgba(255,255,255, 0.35);
+  transition: opacity 2s ease 0.5s;
+  -moz-transition: opacity 2s ease 0.5s;
+  -webkit-transition: opacity 2s ease 0.5s;
+  -o-transition: opacity 2s ease 0.5s;
+  opacity: 0;
+}
+
+#arch h1 span {
+  color: #4B2E5E;
+  font-size: 2.5em;
+  font-family: Big Caslon, Cochin, Baskerville, serif;
+  display: inline-block;
+  margin: 0 0.25em;
+  vertical-align: middle;
+}
+
+#hint {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  background: #4B2E5E;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: #333 0 0 7px;
+  display: block;
+  text-decoration: none;
+  
+  opacity: 0;
+  
+  transition: opacity 3s ease 3s;
+  -moz-transition: opacity 3s ease 3s;
+  -webkit-transition: opacity 3s ease 3s;
+  -o-transition: opacity 3s ease 3s;
+}
+
+#details {
+  background: url(../img/arches.png) repeat;
+  position: relative;
+  padding: 1em;
+}
+
+div.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: normal;
+  font-family: CACChampagneRegular, Cochin, Baskerville, serif;
+  font-size: 5em;
+  text-align: center;
+  margin: 0.75em 0;
+}
+
+img.frame {
+  padding: 5px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: #333 0 0 3px inset;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+#how-they-met, #proposal {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+#corks {
+  background: url(../img/corks.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  box-shadow: #222 0 0 20px;
+  z-index: 2;
+}
+
+#corks .shade {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+#proposal-title {
+  font-family: Copperplate, Cochin, Baskerville, serif;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 6em;
+  margin: 0.5em 0;
+  color: #eee;
+  text-shadow: 1px 1px 5px rgba(0,0,0, 0.75);
+}
+
+#bottom {
+  background: url(../img/arches.png) repeat;
+  position: relative;
+  padding: 1em;
+}
+
+#coming-soon {
+  font-size: 2em;
+  text-align: center;
+}
+
+p.script {
+  font-family: CACChampagneRegular, Cochin, Baskerville, serif;
+  font-size: 2em;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'CACChampagneRegular';
+    src: url('../fonts/cac_champagne-webfont.eot');
+    src: url('../fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cac_champagne-webfont.woff') format('woff'),
+         url('../fonts/cac_champagne-webfont.ttf') format('truetype'),
+         url('../fonts/cac_champagne-webfont.svg#CACChampagneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

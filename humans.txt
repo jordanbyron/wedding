@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jordan Byron -- Developer and Future Husband of Kelly O'Brien -- @jordan_byron
+
+# THANKS
+
+    Kelly O'Brien for wanting to marry a crazy guy like me
+    Tim Mannle for making me look great in his photos (No small feat)
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
