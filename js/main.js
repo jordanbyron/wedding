@@ -1,4 +1,4 @@
-$(function(){
+// $(function(){
   $('.hero').css('height', $(window).height());
   $('#arch h1').css('opacity', 1);
   $('#hint').css('opacity', 1).click(function(e){
@@ -18,4 +18,4 @@ $(function(){
       $bgobj.css({ backgroundPosition: coords });
     });
   });
-});
+// });
