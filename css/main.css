@@ -60,32 +60,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body { 
+  height: 100%; 
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
-  background: url(../img/arches.png) repeat;
-  font-family: Cochin, Baskerville, serif;
+  background: #fff; /*url(../img/arches.png) repeat;*/
+  font-family: Cochin, Baskerville, serif;  
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
 }
 
 #arch {
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 1000px;
-  width: 100%;
-  position: relative;
-  box-shadow: #222 0 0 20px;
-  z-index: 2;
-}
-
-html.lt-ie8 #arch, html.li-ie7 #arch {
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg.jpg', sizingMethod='scale')";
+  background-image: url(../img/bg.jpg);
+  height: 100%;
 }
 
 #arch h1 {
   font-weight: normal;
-  color: #333;
+  color: #222;
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -93,7 +91,7 @@ html.lt-ie8 #arch, html.li-ie7 #arch {
   text-align: center;
   width: 100%;
   font-size: 4em;
-  text-shadow: 2px 2px rgba(255,255,255, 0.35);
+  text-shadow: 1px 1px 5px rgba(255,255,255, 0.75);
   transition: opacity 2s ease 0.5s;
   -moz-transition: opacity 2s ease 0.5s;
   -webkit-transition: opacity 2s ease 0.5s;
@@ -102,7 +100,7 @@ html.lt-ie8 #arch, html.li-ie7 #arch {
 }
 
 #arch h1 span {
-  color: #4B2E5E;
+  color: #534059;
   font-size: 2.5em;
   font-family: Big Caslon, Cochin, Baskerville, serif;
   display: inline-block;
@@ -114,15 +112,15 @@ html.lt-ie8 #arch, html.li-ie7 #arch {
   position: absolute;
   bottom: 0;
   right: 10%;
-  background: #4B2E5E;
-  color: #fff;
+  background: #534059;
+  color: #f9f9f9;
   width: 100px;
   height: 50px;
   text-align: center;
   padding: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  box-shadow: #333 0 0 7px;
+  box-shadow: #666 0 0 5px;
   display: block;
   text-decoration: none;
   
@@ -134,10 +132,39 @@ html.lt-ie8 #arch, html.li-ie7 #arch {
   -o-transition: opacity 3s ease 3s;
 }
 
-#details {
-  background: url(../img/arches.png) repeat;
+#met {
+  background-image: url(../img/met.jpg);
+  height: 100%;
+}
+
+#ring {
+  background-image: url(../img/ring.jpg);
+  height: 100%;
+}
+
+#hands {
+  background-image: url(../img/hands.jpg);
+  height: 100%;
+}
+
+section.text {
+  background-color: #fff;
   position: relative;
   padding: 1em;
+  box-shadow: #222 0 0 20px;
+  z-index: 2;
+}
+
+section.text.purple {
+  background-color: #534059;
+  color: #fff;
+}
+
+section.text p {
+  font-size: 1.25em;
+  color: #444;
+  text-align: justify;
+  margin: 2em 0;
 }
 
 div.container {
@@ -153,7 +180,7 @@ h2 {
   margin: 0.75em 0;
 }
 
-img.frame {
+.frame {
   padding: 5px;
   background: #fff;
   border-radius: 3px;
@@ -164,62 +191,84 @@ img.frame {
   margin-bottom: 1em;
 }
 
-#how-they-met, #proposal {
-  font-size: 1.25em;
-  text-align: justify;
-}
-
 h3 {
   font-size: 2em;
   margin: 1em 0;
   text-align: center;
 }
 
-#corks {
-  background: url(../img/corks.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+section.hero {
   width: 100%;
-  position: relative;
-  box-shadow: #222 0 0 20px;
-  z-index: 2;
+  display: table;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-#corks .shade {
-  position: absolute;
+section.hero h2.fancy {
+  color: #fff;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0,0,0, 0.75);
+  font-size: 8em;
+}
+
+section.hero h2.center {
+  display: table-cell;
+  vertical-align: middle;
   width: 100%;
-  top: 30%;
-  background: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+section.hero h2 img.line {
+  display: block;
+  margin: 0 auto;
+}
+
+#big-day h3 {
+  font-weight: normal;
+  font-size: 2.5em;
+  margin: 0.5em;
+}
+
+#big-day h4 {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 0.5em;
+  color: #777;
+  text-align: center;
+}
+
+#coming-soon p {
+  font-size: 3em;
+  text-align: center;
+  margin: 1em 0;
+  color: #fff;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.75);
+}
+
+#coming-soon p.script {
+  font-family: CACChampagneRegular, Cochin, Baskerville, serif;
+  font-size: 4em;
+}
+
+footer {
+  background: #eee url(../img/low_contrast_linen.png) repeat;
+  font-family: Gill Sans, Optima, sans-serif;
+  color: #eee;
+  padding: 2em 0;
+}
+
+footer a, footer a:visited {
   color: #fff;
 }
 
-#proposal-title {
-  font-family: Copperplate, Cochin, Baskerville, serif;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  font-size: 6em;
-  margin: 0.5em 0;
-  color: #eee;
-  text-shadow: 1px 1px 5px rgba(0,0,0, 0.75);
+#license, #source {
+  border: none;
+  float: right;
 }
 
-#bottom {
-  background: url(../img/arches.png) repeat;
-  position: relative;
-  padding: 1em;
-}
-
-#coming-soon {
-  font-size: 2em;
-  text-align: center;
-}
-
-p.script {
-  font-family: CACChampagneRegular, Cochin, Baskerville, serif;
-  font-size: 2em;
+.ipad {
+  display: none;
 }
 
 /* Fonts */
@@ -240,9 +289,31 @@ p.script {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
+   
+@media only screen and (max-device-width : 1024px) {
+  .ipad {
+    display: block;
+  }
+  
+  .desktop {
+    display: none;
+  }
+  
+  html, body {
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    overflow: auto;
+  }
+  
+  img.map {
+    width: 100%;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),

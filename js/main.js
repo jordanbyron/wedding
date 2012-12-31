@@ -1,21 +1,10 @@
-// $(function(){
-  $('.hero').css('height', $(window).height());
+(function(){
+  var isiPad = navigator.userAgent.match(/iPad/i) != null;
+  
   $('#arch h1').css('opacity', 1);
   $('#hint').css('opacity', 1).click(function(e){
     $.scrollTo('#details', 2000);
     e.preventDefault();
   })
-  
-  var $window = $(window);
-  
-  $('[data-speed]').each(function(){
-    var $bgobj = $(this); // assigning the object
-    $(window).scroll(function() {
-      var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-      // Put together our final background position
-      var coords = '50% '+ yPos + 'px';
-      // Move the background
-      $bgobj.css({ backgroundPosition: coords });
-    });
-  });
-// });
+
+}())
