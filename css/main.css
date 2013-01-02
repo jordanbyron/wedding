@@ -91,7 +91,7 @@ body {
   text-align: center;
   width: 100%;
   font-size: 4em;
-  text-shadow: 1px 1px 5px rgba(255,255,255, 0.75);
+  text-shadow: 1px 1px 1px rgba(255,255,255, 0.5);
   transition: opacity 2s ease 0.5s;
   -moz-transition: opacity 2s ease 0.5s;
   -webkit-transition: opacity 2s ease 0.5s;
@@ -318,7 +318,9 @@ footer a, footer a:visited {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
-
+  body {
+    font-size: 0.5em;
+  }
 }
 
 /* ==========================================================================
