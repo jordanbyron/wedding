@@ -262,6 +262,12 @@ footer a, footer a:visited {
   color: #fff;
 }
 
+footer p.center {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
 #license, #source {
   border: none;
   float: right;
