@@ -76,12 +76,12 @@ body {
   width: 100%;
 }
 
-#arch {
+.arch {
   background-image: url(../img/bg.jpg);
   height: 100%;
 }
 
-#arch h1 {
+.arch h1 {
   font-weight: normal;
   color: #222;
   position: absolute;
@@ -99,7 +99,7 @@ body {
   opacity: 0;
 }
 
-#arch h1 span {
+.arch h1 span {
   color: #534059;
   font-size: 2.5em;
   font-family: Big Caslon, Cochin, Baskerville, serif;
@@ -137,12 +137,12 @@ body {
   height: 100%;
 }
 
-#ring {
+.ring {
   background-image: url(../img/ring.jpg);
   height: 100%;
 }
 
-#hands {
+.hands {
   background-image: url(../img/hands.jpg);
   height: 100%;
 }
@@ -210,6 +210,7 @@ section.hero h2.fancy {
   margin: 0;
   text-shadow: 1px 1px 5px rgba(0,0,0, 0.75);
   font-size: 8em;
+  z-index: 2;
 }
 
 section.hero h2.center {
@@ -224,18 +225,28 @@ section.hero h2 img.line {
   margin: 0 auto;
 }
 
-#big-day h3 {
+.big-day h3 {
   font-weight: normal;
   font-size: 2.5em;
   margin: 0.5em;
 }
 
-#big-day h4 {
+.big-day h4 {
   font-weight: normal;
   font-size: 1.5em;
   margin: 0.5em;
   color: #777;
   text-align: center;
+}
+
+img.logo {
+  width: 400px;
+  margin: 50px auto;
+  display: block;
+}
+
+#coming-soon {
+  z-index: -1;
 }
 
 #coming-soon p {
@@ -256,6 +267,8 @@ footer {
   font-family: Gill Sans, Optima, sans-serif;
   color: #eee;
   padding: 2em 0;
+  z-index: 2;
+  box-shadow: #222 0 0 20px;
 }
 
 footer a, footer a:visited {
@@ -275,6 +288,27 @@ footer p.center {
 
 .ipad {
   display: none;
+}
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+  text-align: center;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.25);
+}
+
+nav a, nav a:visited {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-size: 22px;
+  text-shadow: #333 0px 0px 5px;
+  margin: 0 10px;
 }
 
 /* Fonts */
