@@ -60,15 +60,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body { 
-  height: 100%; 
+html, body {
+  height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
   background: #fff; /*url(../img/arches.png) repeat;*/
-  font-family: Cochin, Baskerville, serif;  
+  font-family: Cochin, Baskerville, serif;
 }
 
 .wrapper {
@@ -90,25 +90,25 @@ body {
 }
 
 .arch h1 {
+  font-family: Always In My Heart;
   font-weight: normal;
-  color: #222;
+  color: #333;
   position: absolute;
   bottom: 0;
   margin: 0;
   display: block;
   text-align: center;
   width: 100%;
-  font-size: 4em;
+  font-size: 5em;
   text-shadow: 1px 1px 1px rgba(255,255,255, 0.5);
 }
 
 .arch h1 span {
   color: #534059;
   font-size: 2.5em;
-  font-family: Big Caslon, Cochin, Baskerville, serif;
   display: inline-block;
-  margin: 0 0.25em;
   vertical-align: middle;
+  width: 1em;
 }
 
 #hint {
@@ -126,9 +126,9 @@ body {
   box-shadow: #666 0 0 5px;
   display: block;
   text-decoration: none;
-  
+
   opacity: 0;
-  
+
   transition: opacity 3s ease 3s;
   -moz-transition: opacity 3s ease 3s;
   -webkit-transition: opacity 3s ease 3s;
@@ -328,24 +328,35 @@ nav a, nav a:visited {
 
 }
 
+@font-face {
+    font-family: Always In My Heart;
+    src: url('../fonts/alwaysinmyheart.eot');
+    src: url('../fonts/alwaysinmyheart.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/alwaysinmyheart.woff') format('woff'),
+         url('../fonts/alwaysinmyheart.ttf') format('truetype'),
+         url('../fonts/alwaysinmyheart.svg#CACChampagneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-   
+
 @media only screen and (max-device-width : 1024px) {
   .ipad {
     display: block;
   }
-  
+
   .desktop {
     display: none;
   }
-  
+
   html, body {
     overflow: hidden;
   }
-  
+
   .wrapper {
     position: absolute;
     height: 100%;
@@ -353,7 +364,7 @@ nav a, nav a:visited {
     top: 0;
     overflow: auto;
   }
-  
+
   img.map {
     width: 100%;
   }
